@@ -1,0 +1,15 @@
+# Start controller
+cd ~/pox
+./pox.py log.level --DEBUG forwarding.l2_learning
+
+# Start Mininet
+sudo mn --controller=remote,ip=127.0.0.1,port=6633 --topo=single,3
+
+# Test
+pingall
+
+# Failure
+h2 ifconfig h2-eth0 down
+
+# Recovery
+h2 ifconfig h2-eth0 up
