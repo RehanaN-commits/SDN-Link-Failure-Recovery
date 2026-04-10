@@ -13,3 +13,8 @@ h2 ifconfig h2-eth0 down
 
 # Recovery
 h2 ifconfig h2-eth0 up
+
+#performance 
+h1 iperf -s &
+
+h2 iperf -c h1

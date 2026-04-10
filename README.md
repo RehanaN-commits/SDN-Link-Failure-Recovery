@@ -109,13 +109,12 @@ This project demonstrates how SDN enables centralized control and dynamic networ
 - Automatic link failure detection
 - Dynamic rerouting using multiple paths
 - Load balancing using SDN controller logic
-- Implementation using Ryu controller
+
 
 ---
 
 ##  Project Structure
 ```
-##  Project Structure
 SDN-Link-Failure-Recovery/
 │
 ├── README.md
@@ -125,11 +124,12 @@ SDN-Link-Failure-Recovery/
     ├── 1_normal.png
     ├── 2_failure.png
     └── 3_recovery.png
+    └── 4_flows.png
+    └── 5_iperf.png
 
----
 
----
-
-## Author
+##  Author
 - Name: Rehana N
 - Course: Computer Networks 
+
+--- 
