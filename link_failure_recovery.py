@@ -11,6 +11,8 @@ def _handle_PacketIn(event):
 
     msg = of.ofp_flow_mod()
     msg.match.in_port = in_port
+    msg.idle_timeout = 10
+    msg.hard_timeout = 30
 
     # Flood packets (basic forwarding)
     msg.actions.append(of.ofp_action_output(port=of.OFPP_FLOOD))
